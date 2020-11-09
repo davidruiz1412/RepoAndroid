@@ -1,49 +1,50 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="16dp"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button_toast"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:background="@color/colorPrimaryDark"
-        android:text="@string/UpperButt"
-        android:textColor="@android:color/darker_gray" />
+    <LinearLayout
+        android:layout_width="415dp"
+        android:layout_height="734dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/button_count"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/button_toast"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_gravity="center_horizontal"
-        android:background="@color/colorPrimary"
-        android:text="@string/LowerButt"
-        android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:background="@android:color/holo_blue_dark"
+            android:text="@string/UpperButt"
+            android:textSize="35sp" />
 
-    <TextView
-        android:id="@+id/show_count"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_gravity="center_horizontal"
-        android:layout_toEndOf="@+id/button_toast"
-        android:layout_toRightOf="@+id/button_toast"
-        android:background="@color/colorAccent"
-        android:gravity="center"
-        android:text="@string/Show_Count"
-        android:textColor="@color/colorPrimary"
-        android:textSize="150sp"
-        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="586dp"
+            android:layout_weight="0"
+            android:background="@android:color/holo_orange_light"
+            android:gravity="center"
+            android:text="@string/Show_Count"
+            android:textSize="80sp" />
 
-
-</RelativeLayout>
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:background="@android:color/holo_blue_dark"
+            android:text="@string/LowerButt"
+            android:textSize="35sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
